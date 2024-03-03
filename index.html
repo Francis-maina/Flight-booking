@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <style>
+        form {
+          width: 100px;  
+        }
+        fieldset {
+           border-width: 0px;
+           background: rgba(15, 15, 15, 0.432); 
+        }
+        input {
+            border-color: chocolate;
+        }
+        select {
+            border-color: chocolate;
+        }
+        button {
+            border-color: transparent;
+            background-color: rgb(252, 235, 6);
+            color: white;
+            width: 15cm;
+            height: 30px;
+        }
+    </style>
+</head>
+   <h1>
+       <label> <font color = white face = Cambria> Flight Ticket Booking </h1></font> </label> 
+          
+<body leftmargin = 20% topmargin = 100 background="Image/airplane-windows.jpg">
+   <form method="POST" action="?">
+       <font face= cambria color = white>
+
+
+
+       <fieldset>
+           <legend> Reservation </legend>
+           <br>
+           <table>
+               <tr height=1px>
+            <label for= f1>     Flying From        </label>  
+              <span style=padding-left:193px>
+            <label for=flying>  Flying To   </label>    
+               </tr> 
+            </table>
+              <input id=f1 name= aditya size = 34 Placeholder = "City or Airport" type=text>
+              <input align=right id=flying size=34 Placeholder = "City or Airport" type=text>
+              <br> <br>
+            <label for=date1> Departing   </label>
+               <span style=padding-left:50px>
+                 <input id=date1 type=date minlength="01-01-1975">
+                <span style=padding-left:10px> 
+            <label for=date>  Returning  </label>
+                <span style=padding-left:45px>
+                 <input id=date type=date>
+                 <br> <br>  
+            <label for=way> Choose Your Way</label> 
+                <font color="yellow">
+                 <label for=way>
+                 <input id=way type=radio name=way> Round Trip 
+                 <input id=way type=radio name=way> One Way
+                 <input id=way type=radio name=way> Multi City </font> </label>
+                 <br> <br>
+            <label for= adults> Adults </label> 
+                <input id=adults type="number" min=0 max=20>
+            <label for= Children> Children </label> 
+                 <input id=Children type="number" min=0 max=20>
+                  <br> <br> 
+            <label for= travel> Travel Class </label> <font color= orange>
+             <select id=travel>
+                   <option value=""> First Class </option> 
+                   <option> Business Class </option>
+                   <option> Economy Class </option>
+             </select> </font> 
+                <br> <br>
+                <button size=50> <b> Show Flights </b>  </button>
+       </fieldset> 
+    </form> </font>   
+</body>
+</html>
